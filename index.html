@@ -7,50 +7,50 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   
-  <title>Frontend Mentor | Results summary component</title>
+  <title>En_Balor SummaryTest</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    @import url(https://fonts.google.com/specimen/Hanken+Grotesk);
   </style>
 </head>
 <body>
   <section>
-    <div class="scoreboardBox">
-      <div class="averageBox">
-        <ul class="average">
-          <li class="resultTitle">Your Result</li>
+    <main role="main">
+      <div class="scoreboardBox">
+        <div class="averageBox">
+          <h2 class="resultTitle">Your Result</h2>
           <div class="circle">
-            <li class="currentFont">76</li>
-            <li class="maxFont resultFont">of 100</li>
+            <h1 class="currentFont">76</h1>
+            <h3 class="maxFont resultFont">of 100</h3>
           </div>
-          <li class="comment">Great</li>
-          <li class="averageResult resultFont">You scored higher than 65% of the people who have taken these tests.</li>
-        </ul>
+          <h1 class="average">Great</h1>
+          <h4 class="averageResult resultFont">You scored higher than 65% of the people who have taken these tests.</h3>
+        </div>
+        
+        <div class="summaryBox">
+          <h1 class="summaryTitle summaryColor">Summary</h1>
+          <div class="elements">
+            <h3 class="reaction summaryAlign"><img src="assets/images/icon-reaction.svg" alt="/" class="summaryLogo">Reaction
+              <span class="currentColor">80&nbsp;</span> <span class="maxScore">/ 100</span>
+            </h3>
+            <h3 class="memory summaryAlign"><img src="assets/images/icon-memory.svg" alt="/" class="summaryLogo">Memory
+              <span class="currentColor">92&nbsp;</span> <span class="maxScore">/ 100</span>
+            </h3>
+            <h3 class="verbal summaryAlign"><img src="assets/images/icon-verbal.svg" alt="/" class="summaryLogo">Verbal
+              <span class="currentColor">61&nbsp;</span> <span class="maxScore">/ 100</span>
+            </h3>
+            <h3 class="visual summaryAlign"><img src="assets/images/icon-visual.svg" alt="/" class="summaryLogo">Visual
+              <span class="currentColor">72&nbsp;</span> <span class="maxScore">/ 100</span>
+            </h3>
+          </div>
+          
+          <button type="button" class="continueButton">Continue</button>
+        </div>
       </div>
-      
-      <div class="summaryBox">
-        <ul class="summary">
-          <li class="summaryTitle summaryColor">Summary</li>
-          <ul class="elements">
-            <li class="reaction summaryAlign"><img src="assets/images/icon-reaction.svg" class="summaryLogo">Reaction
-              <span class="currentColor">80&nbsp;</span> <span>/ 100</span>
-            </li>
-            <li class="memory summaryAlign"><img src="assets/images/icon-memory.svg" class="summaryLogo">Memory
-              <span class="currentColor">92&nbsp;</span> <span>/ 100</span>
-            </li>
-            <li class="verbal summaryAlign"><img src="assets/images/icon-verbal.svg" class="summaryLogo">Verbal
-              <span class="currentColor">61&nbsp;</span> <span>/ 100</span>
-            </li>
-            <li class="visual summaryAlign"><img src="assets/images/icon-visual.svg" class="summaryLogo">Visual
-              <span class="currentColor">72&nbsp;</span> <span>/ 100</span>
-            </li>
-          </ul>
-        </ul>
-        <button type="button" class="continueButton">Continue</button>
-      </div>
-    </div>
+    </main>
   </section>
 </body>
 
