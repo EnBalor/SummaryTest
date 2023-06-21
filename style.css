@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-weight: 500;
+    font-family: 'Hanken Grotesk', sans-serif;
  }
 
 body {
@@ -9,22 +10,23 @@ body {
 }
 
 main {
-    margin: 0;
-    width: 1920px;
-    min-height: 97vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 98vh;
     color: hsla(0, 0%, 100%, 65%);
 }
 
 .scoreboardBox {
+    position: absolute;
     display: flex;
     justify-content: center;
-    height: 470px;
-    width: 670px;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 450px;
+    width: 665px;
     border-radius: 8%;
-    background-color: darkblue;
     background-color: #fff;
 }
 
@@ -34,7 +36,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50vh;
+    width: 100%;
+    height: 100%;
     border-radius: 8%;
     color: #fff;
 }
@@ -94,7 +97,7 @@ main {
 .summaryBox {
     display: flex;
     flex-direction: column;
-    width: 50vh;
+    width: 100%;
 }
 
 span {
@@ -178,11 +181,68 @@ span {
     cursor: pointer;
 }
 
-footer {
-    background: darkcyan;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 3vh;
+button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
+footer {
+    display: flex;
+    height: 1vh;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+@media (max-width: 375px) {
+
+    body {
+        background-color: #fff;
+    }
+
+    .scoreboardBox {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border-radius: 0%;
+        width: 375px;
+        background-color: #fff;
+    }
+
+    .averageBox {
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+    }
+
+    .circle {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        margin: 10px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    }
+    
+    .currentFont {
+        margin: 15px;
+    }
+
+    footer {
+        display: flex;
+        height: 1vh;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        background-color: #fff;
+    }
+}
