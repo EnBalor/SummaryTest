@@ -21,7 +21,7 @@ main {
 .scoreboardBox {
     display: flex;
     justify-content: center;
-    height: 450px;
+    height: 470px;
     width: 670px;
     border-radius: 8%;
     background-color: darkblue;
@@ -66,8 +66,15 @@ main {
     height: 40%;
 }
 
+.average {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
 .resultFont {
     color: hsla(0, 0%, 100%, 50%);
+    font-size: 16px;
 }
 
 .comment {
